@@ -1,0 +1,650 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #4caf50; /* Green color for header */
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav {
+    flex: 1; /* Allows nav to take up available space */
+    margin: 0 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #388e3c; /* Darker green for hover effect */
+}
+
+/* Header Button Styles */
+header .btn {
+    background-color: #fff; /* White background */
+    color: #4caf50; /* Green text */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+header .btn:hover {
+    opacity: 0.9; /* Slightly transparent on hover */
+}
+
+/* Main Content Styles */
+.admin-main {
+    padding: 2rem;
+}
+
+.admin-home h1 {
+    color: #4caf50;
+}
+
+/* Dashboard Widgets */
+.dashboard-widgets {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* Allows wrapping of widgets */
+}
+
+.widget {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    flex: 1 1 calc(25% - 1rem); /* Adjust column width and spacing */
+}
+
+.widget h2 {
+    color: #4caf50;
+    margin: 0 0 0.5rem;
+}
+
+.widget p {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Actions Section Styles */
+.admin-actions {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of columns */
+    gap: 1rem; /* Space between columns */
+}
+
+.action {
+    flex: 1 1 calc(50% - 1rem); /* Adjust column width and spacing */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.action h3 {
+    color: #4caf50;
+    margin: 0 0 0.5rem;
+}
+
+.action .btn {
+    display: inline-block;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.action .btn:hover {
+    opacity: 0.9;
+}
+
+
+/* Main Container */
+.main {
+    padding: 2rem;
+}
+
+/* Form Container */
+.form-container {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.form-container h2 {
+    color: #4caf50;
+    margin-top: 0;
+}
+
+.form-container form input {
+    display: block;
+    width: calc(100% - 2rem);
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container form button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-container form button:hover {
+    opacity: 0.9;
+}
+
+.form-container .btn-danger {
+    background-color: #e53935;
+}
+
+.form-container .btn-danger:hover {
+    opacity: 0.9;
+}
+.form-container textarea {
+    display: block;
+    width: calc(100% - 2rem);
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical; /* Allows vertical resizing */
+    min-height: 100px; /* Sets a minimum height for better visibility */
+}
+
+
+.item-info p.description {
+    margin: 0.5rem 0;
+    color: #333; /* Adjust color as needed */
+    font-size: 0.9rem; /* Slightly smaller font size for description */
+    line-height: 1.5; /* Increases line spacing for readability */
+    background-color: #f9f9f9; /* Optional background color */
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd; /* Optional border for better visibility */
+}
+
+.item-list h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Item Card */
+.item-card {
+    display: flex;
+    align-items: center;
+    background-color: #e8f5e9;
+    border: 1px solid #4CAF50;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.item-card img {
+    max-width: 150px;
+    border-right: 1px solid #4CAF50;
+}
+
+.item-info {
+    flex: 1;
+    padding: 1rem;
+}
+
+.item-info h3 {
+    color: #4CAF50;
+    margin: 0 0 0.5rem 0;
+}
+.item-info p {
+    margin: 0.5rem 0;
+    color: #333; /* Adjust color as needed */
+    font-size: 0.9rem; /* Slightly smaller font size for description */
+    line-height: 1.5; /* Increases line spacing for readability */
+    background-color: #f9f9f9; /* Optional background color */
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd; /* Optional border for better visibility */
+}
+
+/* Edit/Delete Form */
+.edit-form {
+    margin-top: 1rem;
+}
+
+.edit-form input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+}
+.edit-form textarea[name="description"] {
+    width: calc(100% - 22px); /* Adjust width for padding and border */
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    resize: vertical; /* Allows vertical resizing */
+    min-height: 100px; /* Sets a minimum height for better visibility */
+    font-size: 0.9rem; /* Slightly smaller font size for description */
+}
+
+.edit-form .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-form .btn:hover {
+    background-color: #45a049;
+}
+
+.edit-form .btn-danger {
+    background-color: #f44336;
+}
+
+.edit-form .btn-danger:hover {
+    background-color: #e53935;
+}
+
+/* Empty Message */
+.empty {
+    color: #777;
+    text-align: center;
+}
+.reservation-info, .reservations {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+}
+
+.reservation-info h2, .reservations h2 {
+    color: #4caf50; /* Green color for headings */
+    margin-bottom: 1rem;
+}
+
+/* Reservation Items */
+.reservation-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.reservation-item {
+    background-color: #f9f9f9; /* Light grey background for items */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    flex: 1 1 calc(33.333% - 1rem);
+    box-sizing: border-box;
+}
+
+.reservation-item h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.reservation-item p {
+    margin: 0.5rem 0;
+}
+
+/* Buttons */
+.reservation-item .btn {
+    background-color: #4caf50; /* Green background */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 0.5rem;
+    text-align: center;
+}
+
+.reservation-item .btn:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+/* No Items Found */
+.empty {
+    text-align: center;
+    color: #888;
+    font-size: 1.2rem;
+}
+.reservation-info, .delete-info, .reservation-form {
+    background-color: #e8f5e9;
+    border: 1px solid #4caf50;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.reservations .reservation-list, .delete-info, .edit-info {
+    background-color: #e8f5e9;
+    border: 1px solid #4caf50;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.reservation-item, .reservation-form .input-field {
+    border: 1px solid #4caf50;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.reservation-item h3 {
+    margin: 0;
+    color: #2e7d32;
+}
+
+.reservation-item p {
+    margin: 0.2rem 0;
+}
+
+.reservation-item .btn, .delete-info .btn, .edit-info .btn, .reservation-form .btn {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.order-info, .orders {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.order-info h2, .orders h2 {
+    color: #006400; /* Dark Green color */
+}
+
+.order-list {
+    margin-top: 1rem;
+}
+
+.order-item {
+    background: #eaf0e2; /* Light Green color */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-item h3 {
+    margin-top: 0;
+    color: #004d00; /* Darker Green color */
+}
+
+.order-item p {
+    margin: 0.5rem 0;
+}
+ .order-item .btn {
+    background-color: #006400; /* Dark Green color */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.empty {
+    color: #666;
+    font-style: italic;
+}
+.edit-order {
+    background-color: #e6f9e6; /* Light green background for the form */
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-order h2 {
+    color: #004d00; /* Dark green for headings */
+    margin-bottom: 1rem;
+}
+
+.edit-order .input-field {
+    margin-bottom: 1rem;
+}
+
+.edit-order .input-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #004d00; /* Dark green for labels */
+}
+
+.edit-order .input-field input,
+.edit-order .input-field select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #004d00; /* Dark green border */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.edit-order .input-field input:focus,
+.edit-order .input-field select:focus {
+    border-color: #009900; /* Brighter green for focus state */
+    outline: none;
+}
+
+.edit-order .btn {
+    background-color: #004d00; /* Dark green button background */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.edit-order .btn:hover {
+    background-color: #009900; /* Brighter green on hover */
+}
+
+/* Error and Success Messages */
+.error {
+    color: #ff4d4d; /* Red color for errors */
+    background-color: #ffe6e6; /* Light red background */
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.success {
+    color: #4dff4d; /* Green color for success messages */
+    background-color: #e6ffe6; /* Light green background */
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.manage-user .form-container h3 {
+    margin-top: 0;
+}
+
+.manage-user .input-field {
+    margin-bottom: 1rem;
+}
+
+.manage-user .input-field label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.manage-user .input-field input, .input-field select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.manage-user .btn {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.manage-user .btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.user-list {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.user-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-list th, .user-list td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.user-list th {
+    background-color: #4CAF50; /* Green header background */
+    color: white;
+}
+
+.user-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-list tr:hover {
+    background-color: #f1f1f1;
+}
+/* Edit Button Style */
+.btn-edit {
+    display: inline-block;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-edit:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.btn-edit:active {
+    background-color: #397d3f; /* Even darker green when pressed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* Delete Button Style */
+.btn-delete {
+    display: inline-block;
+    background-color: #f44336; /* Red background */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-delete:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+.btn-delete:active {
+    background-color: #b71c1c; /* Even darker red when pressed */
+}
+
